@@ -7,22 +7,14 @@
 -- Einstellungen
 local MAIN_LENGTH = 200      -- Länge des Haupttunnels
 local BRANCH_LENGTH = 12     -- Länge der Seitenarme
-local BRANCH_SPACING = 4     -- Abstand zwischen Seitenarmen
+local BRANCH_SPACING = 3     -- Abstand zwischen Seitenarmen
 
 
 ---------------------------------------------------
 -- Navigation
 ---------------------------------------------------
 
-local x = 0
-local y = 0
-local z = 0
-
--- 0 = Nord
--- 1 = Ost
--- 2 = Süd
--- 3 = West
-local direction = 0
+dofile("navigation")
 
 
 local function turnLeft()
