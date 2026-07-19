@@ -14,7 +14,7 @@ local BRANCH_SPACING = 3     -- Abstand zwischen Seitenarmen
 -- Navigation
 ---------------------------------------------------
 
-dofile("navigation")
+dofile("navigation.lua")
 
 
 local function turnLeft()
