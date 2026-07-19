@@ -222,19 +222,35 @@ local function returnHome()
     print("Kehre zurück...")
 
 
+    -- Erst Richtung Start drehen
     turtle.turnLeft()
     turtle.turnLeft()
 
 
-    for i = 1, MAIN_LENGTH do
+    -- Haupttunnel zurückfahren
+    while z ~= 0 do
         forward()
     end
 
 
-    print("Fertig!")
+    -- Richtung Startposition korrigieren
+    while x ~= 0 do
+        forward()
+    end
+
+
+    while y ~= 0 do
+        if y > 0 then
+            down()
+        else
+            up()
+        end
+    end
+
+
+    print("Zurück am Start!")
 
 end
-
 
 
 ---------------------------------------------------
